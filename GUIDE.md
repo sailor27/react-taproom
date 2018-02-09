@@ -59,12 +59,12 @@ npm install --save styled-jsx
  * npm run lint
  * npm run lint-fix
 
-4. Set up index.jsx with hash router and HMR. Create more components. Create component tree.
+4. Set up index.jsx with hash router and HMR. Set up App component with Switch. Create Keg List component. Test routing between components.
 
-5. Set up App component with Switch. Test routing between components.
-
-7. Wireframe style of components
+5. Create data model component and iterate data into the view.
 
 6. Create data model component and iterate data into the view.
+
+7. Wireframe style of components.
 
 8. Refine style of components and resolve issues.
