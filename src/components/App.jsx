@@ -17,10 +17,10 @@ function App(){
   return (
     <div style={appStyle}>
       <h1>App works</h1>
-      <KegList />
+
       <Switch>
-        {/*<Route exact path='/' component={ KegList } />
-        <Route path='/newkeg' component={} />*/}
+        <Route exact path='/' component={ KegList } />
+        {/*  <Route path='/newkeg' component={} />*/}
       </Switch>
 
     </div>

@@ -3,13 +3,8 @@ import PropTypes from 'prop-types';
 
 function Keg(props){
 
-
   return(
     <div>
-      <p>{props.name}</p>
-    </div>
-
-    {/*}<div>
       <div>
         <h4>{props.name}</h4>
       </div>
@@ -28,7 +23,7 @@ function Keg(props){
       <div>
         <h4>{props.remaining}</h4>
       </div>
-    </div>*/}
+    </div>
 
   );
 }
@@ -41,7 +36,7 @@ Keg.propTypes = {
   description: PropTypes.string,
   abv: PropTypes.string,
   price: PropTypes.string,
-  remaining: PropTypes.number
+  remaining: PropTypes.string
 };
 
 export default Keg;
