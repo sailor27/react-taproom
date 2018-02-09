@@ -1,5 +1,17 @@
 ## Project Guide
+ ### Objectives
 
+ This week progress on this multiple-week independent project will be checked using the following objectives:
+
+* Development environment is fully-functional, including Babel transpiling, Webpack module bundling, a development server with hot module replacement, and linting.
+* Components are used to create modular UI elements.
+propTypes define data types and shapes for all component props.
+* Application successfully uses client-side routing via the
+* React-Router library to create appearance of multiple pages.
+* Styles are successfully added using CSS objects.
+* Project was submitted by the Friday deadline.
+* Project demonstrates an understanding of this week's concepts.
+* If prompted, you can discuss your code with an instructor using the correct terminology.
 
 
 1. Create repositories, support and config files. Install atom packages for react.
