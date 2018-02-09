@@ -2,6 +2,7 @@ import React from 'react';
 import KegList from './KegList';
 import Header from './Header';
 import NewKegForm from './NewKegForm';
+import Error404 from './Error404';
 import { Switch, Route } from 'react-router-dom';
 
 function App(){
@@ -20,15 +21,12 @@ function App(){
     <div style={appStyle}>
       <style global jsx>{`
         @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab:400,700i');
-
       `}</style>
-
       <Header/>
-      <h1>App works</h1>
-
       <Switch>
         <Route exact path='/' component={ KegList } />
         <Route path='/newkeg' component={ NewKegForm } />
+        <Route component={Error404} />
       </Switch>
 
     </div>
