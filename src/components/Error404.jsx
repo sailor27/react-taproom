@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+
 function Error404(props){
 
   const errorStyle = {
@@ -10,16 +11,14 @@ function Error404(props){
     alignItems: 'center',
   };
   return (
-
     <div>
-      <div style={{backgroundColor:'#4fc5d0'}}>
+      <div>
         <div className="container">
           <div style={errorStyle}>
             <div>
               <h1> Oh No!</h1>
               <h1>There's nothing here.</h1>
               <h3>Would you like to return <Link to="/">home</Link> instead?</h3>
-
               <small> The page you requested at  {props.location.pathname} does not exist. </small>
             </div>
           </div>
