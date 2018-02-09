@@ -1,0 +1,19 @@
+{
+  "name": "react-taproom",
+  "version": "1.0.0",
+  "description": "This project is a revision of the Tap Room Angular2 application.",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sailor27/react-taproom.git"
+  },
+  "author": "Sailor Winkelman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sailor27/react-taproom/issues"
+  },
+  "homepage": "https://github.com/sailor27/react-taproom#readme"
+}
