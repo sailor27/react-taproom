@@ -5,7 +5,8 @@ function Keg(props){
 
   const kegRows= {
     display: 'flex',
-    border: '2px solid black',
+    border: '3px solid rgb(19, 36, 115)',
+    backgroundColor: 'white',
     justifyContent: 'space-around',
     alignItems: 'center',
     minHeight: '110px',
@@ -39,8 +40,9 @@ function Keg(props){
       </div>
       <style jsx>{`
           .prop {
-            color: var(--navy);
-            border: 1px solid var(--navy);
+            color: var(--blueblack);
+            border: 3px solid var(--blueblack);
+            background-color: var(--light-peach);
             width: 170px;
             height: 75px;
             display: flex;

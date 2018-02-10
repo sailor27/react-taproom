@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Header() {
   return(
     <div className="header">
-      <h1><Link style={{fontFamily:'Josefin Slab', fontSize: '4.75em' }}to="/">TAP ROOM</Link></h1>
+      <h1><Link style={{fontFamily:'Josefin Slab', fontSize: '4.75em', color:'rgb(19, 36, 115)' }}to="/">TAP ROOM</Link></h1>
       <div>
         <ul className="nav">
           <li><Link to="/">Menu</Link></li>
@@ -26,16 +26,14 @@ function Header() {
             color: var(--navy);
           }
           .nav {
+            background-color: white;
             list-style:none;
             display: flex;
             justify-content: space-around;
             align-items: center;
             width: 600px;
             height: 75px;
-            border: 3px solid purple;
-          }
-          h1{
-            fontFamily: 'Fredericka the Great', serif;
+            border: 3px solid var(--blueblack);
           }
           `}
       </style>

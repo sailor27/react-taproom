@@ -10,12 +10,12 @@ function App(){
   var appStyle = {
 
     margin: '0px',
-    background: `#FFFAFA url(${squigs})`,
+    background: `#FFFAFAA url(${squigs})`,
     backgroundSize: 'cover',
     height: '100vh',
     color: '#EB6EBD',
     fontFamily: 'Open Sans',
-    fontSize: '20px',
+    fontSize: '18px',
     textAlign: 'center',
     boxSizing: 'border-box'
   };
@@ -30,11 +30,17 @@ function App(){
           --darkblue: #5f6898;
           --lightblue: #e2edff;
           --navy: #606f92;
+          --blueblack: rgb(19, 36, 115);
         }
         @import url('https://fonts.googleapis.com/css?family=Josefin+Slab:400,700i|Open+Sans+Condensed:300,700|Open+Sans:400,700');
 
         a {
          text-decoration: none;
+         color: var(--blueblack);
+        }
+
+        a:hover{
+          font-style: ital
         }
 
       `}</style>
