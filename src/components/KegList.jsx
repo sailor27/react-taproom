@@ -55,10 +55,17 @@ const masterKegList = [
 ];
 
 function KegList() {
+
+  const listStyle = {
+    display: 'flex',
+    width: '100%',
+    flexFlow: 'column nowrap',
+    justifyContent: 'center',
+    alignItems: 'center'
+  };
   return (
 
-    <div>
-      <hr/>
+    <div style={listStyle}>
       {masterKegList.map((keg, index) =>
         <Keg name={keg.name}
           brewer={keg.brewer}

@@ -34,6 +34,7 @@ function Keg(props){
       </div>
       <style jsx>{`
           .prop {
+            color: var(--test-purple);
             border: 1px solid purple;
             width: 170px;
             height: 75px;

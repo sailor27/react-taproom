@@ -4,24 +4,34 @@ import Header from './Header';
 import NewKegForm from './NewKegForm';
 import Error404 from './Error404';
 import { Switch, Route } from 'react-router-dom';
-import squigs from '../assets/images/152.jpg';
+import squigs from '../assets/images/1520.jpg';
 
 function App(){
   var appStyle = {
 
     margin: '0px',
-    background: `#FFAAFA url(${squigs}) no-repeat fixed center`,
+    background: `#FFFAFA url(${squigs})`,
+    backgroundSize: 'cover',
     height: '100vh',
     color: '#EB6EBD',
-    fontFamily: 'monospace',
-    fontSize: '18px',
+    fontFamily: 'Josefin Slab',
+    fontSize: '20px',
     textAlign: 'center',
     boxSizing: 'border-box'
   };
   return (
     <div style={appStyle}>
       <style global jsx>{`
-        @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab:400,700i');
+        :root {
+          --bg-white: #0fd808;
+          --test-purple: magenta;
+        }
+        @import url('https://fonts.googleapis.com/css?family=Josefin+Slab:400,700i');
+
+        a {
+         text-decoration: none;
+        }
+
       `}</style>
       <Header/>
 
