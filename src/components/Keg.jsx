@@ -39,8 +39,8 @@ function Keg(props){
       </div>
       <style jsx>{`
           .prop {
-            color: var(--test-purple);
-            border: 1px solid purple;
+            color: var(--navy);
+            border: 1px solid var(--navy);
             width: 170px;
             height: 75px;
             display: flex;

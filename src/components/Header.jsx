@@ -23,6 +23,7 @@ function Header() {
             flex-flow: column nowrap;
             justify-content: center;
             align-items: center;
+            color: var(--navy);
           }
           .nav {
             list-style:none;

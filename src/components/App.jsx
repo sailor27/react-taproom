@@ -24,7 +24,12 @@ function App(){
       <style global jsx>{`
         :root {
           --bg-white: #0fd808;
-          --test-purple: magenta;
+          --light-peach: #ffe3ce;
+          --peach: #ffbdb4;
+          --periwink: #b0cbff;
+          --darkblue: #5f6898;
+          --lightblue: #e2edff;
+          --navy: #606f92;
         }
         @import url('https://fonts.googleapis.com/css?family=Josefin+Slab:400,700i|Open+Sans+Condensed:300,700|Open+Sans:400,700');
 
