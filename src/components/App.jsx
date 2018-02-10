@@ -10,7 +10,8 @@ function App(){
   var appStyle = {
 
     margin: '0px',
-    background: `#FFFAFAA url(${squigs})`,
+    background: `linear-gradient(
+      rgba(255, 0, 0, 0.10),rgba(255, 0, 0, 0.10)), url(${squigs})`,
     backgroundSize: 'cover',
     height: '100vh',
     color: '#EB6EBD',
@@ -40,7 +41,7 @@ function App(){
         }
 
         a:hover{
-          font-style: ital
+          font-style: italic;
         }
 
       `}</style>
