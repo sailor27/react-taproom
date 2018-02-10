@@ -14,7 +14,7 @@ function App(){
     backgroundSize: 'cover',
     height: '100vh',
     color: '#EB6EBD',
-    fontFamily: 'Josefin Slab',
+    fontFamily: 'Open Sans',
     fontSize: '20px',
     textAlign: 'center',
     boxSizing: 'border-box'
@@ -26,7 +26,7 @@ function App(){
           --bg-white: #0fd808;
           --test-purple: magenta;
         }
-        @import url('https://fonts.googleapis.com/css?family=Josefin+Slab:400,700i');
+        @import url('https://fonts.googleapis.com/css?family=Josefin+Slab:400,700i|Open+Sans+Condensed:300,700|Open+Sans:400,700');
 
         a {
          text-decoration: none;

@@ -8,29 +8,34 @@ function Keg(props){
     border: '2px solid black',
     justifyContent: 'space-around',
     alignItems: 'center',
-    minHeight: '100px',
+    minHeight: '110px',
+    marginBottom: '14px',
+    padding: '0px 12px',
     width: '73%'
   };
 
   return(
     <div style={kegRows}>
       <div className="prop">
-        <h4>{props.name}</h4>
+        <p>{props.name}</p>
       </div>
       <div className="prop">
-        <h4>{props.brewer}</h4>
+        <p>{props.brewer}</p>
       </div>
       <div className="prop">
-        <h4>{props.description}</h4>
+        <p>{props.description}</p>
       </div>
       <div className="prop">
-        <h4>{props.abv}</h4>
+        <p>{props.abv}</p>
       </div>
       <div className="prop">
-        <h4>{props.price}</h4>
+        <p>${props.price}</p>
       </div>
       <div className="prop">
-        <h4>{props.remaining}</h4>
+        <p>{props.remaining}</p>
+      </div>
+      <div className="pour">
+        <button>Pour</button>
       </div>
       <style jsx>{`
           .prop {
@@ -41,6 +46,23 @@ function Keg(props){
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-right: 8px;
+          }
+          .pour {
+            width: 170px;
+            height: 75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 8px;
+          }
+
+          button{
+            width: 100px;
+            height: 60px;
+            border: 3px solid black;
+            border-radius: 25px;
+            font-size: 1em;
           }
           `}
       </style>
