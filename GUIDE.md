@@ -4,9 +4,9 @@
 
 1. Restructure component tree to include admin component area. Admin area will include copy of ticket list, and route to add keg child component.
 
-2. Create Admin component and route to admin component from home
+2. Create Admin component and route to admin component from app in header
 
-3. Create new keg form and route from admin
+3. Create new keg form and display in header if on admin route
 
 4. Lift state to app component, and pass keg data into list and admin component.
 
