@@ -35,7 +35,7 @@ function Keg(props){
         <p>{props.remaining} left</p>
       </div>
       <div className="pour">
-        <button>Pour</button>
+        <button onClick={() => {props.onKegSelection(props.kegId);}}>Edit</button>
       </div>
       <style jsx>{`
           .prop {
@@ -143,7 +143,8 @@ Keg.propTypes = {
   price: PropTypes.string,
   remaining: PropTypes.string,
   currentRouterPath: PropTypes.string,
-  kegId: PropTypes.string.isRequired
+  kegId: PropTypes.string.isRequired,
+  onKegSelection: PropTypes.func
 };
 
 export default Keg;

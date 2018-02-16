@@ -4,7 +4,6 @@ import KegList from  './KegList';
 import PropTypes from 'prop-types';
 
 function Admin(props) {
-  console.log(props.onKegSelection);
   console.log(props.selectedKeg);
 
   var adminStyle = {
@@ -18,7 +17,8 @@ function Admin(props) {
       <NewKegForm onNewKeg={props.onNewKeg}/>
       <KegList
         kegList={props.kegList}
-        currentRouterPath={props.currentRouterPath} />
+        currentRouterPath={props.currentRouterPath}
+        onKegSelection={props.onKegSelection}/>
     </div>
   );
 

@@ -24,7 +24,8 @@ function KegList(props) {
           remaining={keg.remaining}
           currentRouterPath={props.currentRouterPath}
           key={key}
-          kegId={key}/>;
+          kegId={key}
+          onKegSelection={props.onKegSelection}/>;
         })}
     </div>
   );
@@ -32,7 +33,8 @@ function KegList(props) {
 
 KegList.propTypes = {
   kegList: PropTypes.object,
-  currentRouterPath: PropTypes.string
+  currentRouterPath: PropTypes.string,
+  onKegSelection: PropTypes.func
 };
 
 export default KegList;

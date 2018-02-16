@@ -25,6 +25,10 @@
 
 11. Add kegId property to kegs set to keg key. Plan steps to implement editing kegs.
 
+12. Create handleKegSelection func and send to Admin. Create selectedKeg prop in state, set to null, and send to Admin.
+
+13. Send onKegSelection func from Admin to KegList, and from Keglist to Keg as props. Call onKegSelection function on "Edit" button click on Keg component. Console log selectedKeg in admin and get correct kegId.
+
 12. Edit Keg~!
 
 11. Use local state in admin to show form when "add new keg" is clicked

@@ -66,6 +66,7 @@ class App extends React.Component {
         selectedKeg: null
       };
     this.handleNewKeg = this.handleNewKeg.bind(this);
+    this.handleKegSelection = this.handleKegSelection.bind(this);
   }
 
   handleNewKeg(keg){
