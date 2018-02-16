@@ -142,7 +142,7 @@ Keg.propTypes = {
   abv: PropTypes.string,
   price: PropTypes.string,
   remaining: PropTypes.string,
-  currentRouterPath: PropTypes.string
+  currentRouterPath: PropTypes.string,
 };
 
 export default Keg;

@@ -64,9 +64,17 @@ class App extends React.Component {
           }
         }
       };
+    this.handleNewKeg = this.handleNewKeg.bind(this);
   }
 
-  render() {
+  handleNewKeg(keg){
+    let newKegId = v4();
+    let newmasterKegList = Object.assign({}, this.state.masterKegList, {
+      [newKegId]: newKeg
+    });
+  }
+
+  render(){
     var appStyle = {
       margin: '0px',
       background: `linear-gradient(
@@ -77,7 +85,7 @@ class App extends React.Component {
       fontSize: '18px',
       textAlign: 'center',
       boxSizing: 'border-box'
-  };
+    };
     return (
       <div style={appStyle}>
         <style global jsx>{`
@@ -110,7 +118,10 @@ class App extends React.Component {
         <Header/>
         <Switch>
           <Route exact path='/'render={()=><KegList kegList={this.state.masterKegList} />} />
-          <Route exact path='/admin' render={(props)=><Admin kegList={this.state.masterKegList} currentRouterPath={props.location.pathname}/>} />
+          <Route exact path='/admin' render={(props)=><Admin
+              kegList={this.state.masterKegList}
+              currentRouterPath={props.location.pathname}
+              onNewKeg = {this.handleNewKeg}/>} />
           <Route component={Error404} />
         </Switch>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function NewKegForm(){
-
+function NewKegForm(props){
   var formStyle = {
     display: 'flex',
     flexFlow: 'column nowrap',
@@ -59,5 +59,9 @@ function NewKegForm(){
     </div>
   );
 }
+
+NewKegForm.propTypes = {
+  onNewKeg: PropTypes.func
+};
 
 export default NewKegForm;
