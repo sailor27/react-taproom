@@ -6,9 +6,13 @@
 
 2. Create Admin component and route to admin component from app in header
 
-3. Display new keg form in admin route
+3. Display new keg form in admin route and style.
 
 4. Lift state to app component, and pass keg data into list and admin component.
+
+5. Conditionally render pintsLeft in admin route only
+
+
 
 
 

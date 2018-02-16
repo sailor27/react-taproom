@@ -1,5 +1,6 @@
 import React from 'react';
 import NewKegForm from './NewKegForm';
+import KegList from  './KegList';
 
 function Admin() {
   var adminStyle = {
@@ -11,6 +12,7 @@ function Admin() {
     <div style={adminStyle}>
       <h1>Add a New Keg</h1>
       <NewKegForm/>
+      <KegList/>
 
     </div>
   );
