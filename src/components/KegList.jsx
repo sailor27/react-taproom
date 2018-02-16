@@ -3,7 +3,7 @@ import Keg from './Keg';
 import PropTypes from 'prop-types';
 
 function KegList(props) {
-  
+
 
   const listStyle = {
     display: 'flex',
@@ -23,7 +23,8 @@ function KegList(props) {
           price={keg.price}
           remaining={keg.remaining}
           currentRouterPath={props.currentRouterPath}
-          key={key}/>;
+          key={key}
+          kegId={key}/>;
         })}
     </div>
   );

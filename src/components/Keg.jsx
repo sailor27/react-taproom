@@ -143,6 +143,7 @@ Keg.propTypes = {
   price: PropTypes.string,
   remaining: PropTypes.string,
   currentRouterPath: PropTypes.string,
+  kegId: PropTypes.string.isRequired
 };
 
 export default Keg;

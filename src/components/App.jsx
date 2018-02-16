@@ -14,7 +14,7 @@ class App extends React.Component {
     super(props);
       this.state = {
         masterKegList: {
-          0: {
+          '015eec7c-e6ca-4d3c-9c0a-e24f336947b3': {
             name: 'Ruby Zozzle',
             brewer: 'Hi-Wheel',
             description: 'Sparkling Wine & Grapefruit',
@@ -22,7 +22,7 @@ class App extends React.Component {
             price: '7',
             remaining: '20'
           },
-          1: {
+          '115eec7c-e6ca-4d3c-9c0a-e24f336947b3': {
             name: 'Tart N Juicy',
             brewer: 'Epic',
             description: 'Sour IPA',
@@ -30,7 +30,7 @@ class App extends React.Component {
             price: '6',
             remaining: '60'
           },
-          2: {
+          '215eec7c-e6ca-4d3c-9c0a-e24f336947b3': {
             name: 'Hamm\'s',
             brewer: 'Miller/Coors',
             description: 'American Lager',
@@ -38,7 +38,7 @@ class App extends React.Component {
             price: '3',
             remaining: '65'
           },
-          3: {
+          '315eec7c-e6ca-4d3c-9c0a-e24f336947b3': {
             name: 'Prismatic',
             brewer: 'Ninkasi',
             description: 'Juicy IPA',
@@ -46,7 +46,7 @@ class App extends React.Component {
             price: '6',
             remaining: '75'
           },
-          4: {
+          '415eec7c-e6ca-4d3c-9c0a-e24f336947b3': {
             name: 'Juicy Haze',
             brewer: 'New Belgium',
             description: 'India Pale Ale',
@@ -54,7 +54,7 @@ class App extends React.Component {
             price: '6',
             remaining: '18'
           },
-          5: {
+          '515eec7c-e6ca-4d3c-9c0a-e24f336947b3': {
             name: '8 Hop',
             brewer: 'New Belgium',
             description: 'Pale Ale',
