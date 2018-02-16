@@ -69,7 +69,6 @@ class App extends React.Component {
         rgba(255, 0, 0, 0.10),rgba(255, 0, 0, 0.10)), url(${squigs})`,
       backgroundSize: 'cover',
       height: '100vh',
-      color: '#EB6EBD',
       fontFamily: 'Open Sans',
       fontSize: '18px',
       textAlign: 'center',
@@ -95,6 +94,10 @@ class App extends React.Component {
               color: var(--blueblack);
             }
 
+            h1, h2, h3, h4{
+              color: var(--darkblue);
+            }
+
             a:hover{
               font-style: italic;
             }
@@ -103,7 +106,7 @@ class App extends React.Component {
         <Header/>
         <Switch>
           <Route exact path='/'render={()=><KegList kegList={this.state.masterKegList} />} />
-          <Route exact path='/admin' render={()=><Admin kegList={this.state.masterKegList} />} />
+          <Route exact path='/admin' render={(props)=><Admin kegList={this.state.masterKegList} currentRouterPath={props.location.pathname}/>} />
           <Route component={Error404} />
         </Switch>
       </div>
