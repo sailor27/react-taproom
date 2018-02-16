@@ -20,9 +20,7 @@ function NewKegForm(props){
   function handleNewKegForm(event) {
     console.log('form submit handler fire');
     event.preventDefault();
-
     props.onNewKeg({name: _name.value, brewer: _brewer.value, description: _description.value, abv: _abv.value, price: _price.value, remaining: _remaining.value });
-
     _name.value = '';
     _brewer.value = '';
     _description.value = '';
@@ -34,7 +32,7 @@ function NewKegForm(props){
   return (
     <div >
       <form onSubmit={handleNewKegForm} style={formStyle} >
-        <h1>Add a New Keg</h1>
+        <h1>New Keg</h1>
         <input
           type='text'
           id='name'
@@ -94,7 +92,9 @@ function NewKegForm(props){
           }
           button {
             font-size: 1.25em;
-            padding: 5px;
+            display:flex;
+            justify-content: center;
+            padding: 10px;
             background-color: var(--light-peach);
             width: 90px;
             border: 3px solid var(--blueblack);

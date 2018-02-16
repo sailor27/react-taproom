@@ -115,7 +115,10 @@ class App extends React.Component {
             }
 
             h1, h2, h3, h4{
-              color: var(--darkblue);
+              color: var(--blueblack);
+              font-family: Josefin Slab;
+              text-transform: uppercase;
+              font-weight: bold;
             }
 
             a:hover{

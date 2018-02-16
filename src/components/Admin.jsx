@@ -17,8 +17,10 @@ function Admin(props) {
   }
   return(
     <div style={adminStyle}>
-      {optionalContent}
-      <NewKegForm onNewKeg={props.onNewKeg}/>
+      <div style={{display:'flex',justifyContent:'space-around', width:'100%',marginBottom:'40px'}}>
+        <NewKegForm onNewKeg={props.onNewKeg}/>
+        {optionalContent}
+      </div>
       <KegList
         kegList={props.kegList}
         currentRouterPath={props.currentRouterPath}
