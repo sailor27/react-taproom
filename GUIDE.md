@@ -1,4 +1,22 @@
 ## Project Guide
+
+2-16-18
+
+1. Restructure component tree to include admin component area. Admin area will include copy of ticket list, and route to add keg child component.
+
+2. Create Admin component and route to admin component from home
+
+3. Create new keg form and route from admin
+
+4. Lift state to app component, and pass keg data into list and admin component.
+
+
+
+
+
+
+
+
  ### Objectives
 
  This week progress on this multiple-week independent project will be checked using the following objectives:
