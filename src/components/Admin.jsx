@@ -5,8 +5,6 @@ import PropTypes from 'prop-types';
 
 function Admin(props) {
 
-  
-
   var adminStyle = {
     display: 'flex',
     flexFlow: 'column nowrap',
