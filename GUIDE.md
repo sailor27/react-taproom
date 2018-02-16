@@ -8,9 +8,22 @@
 
 3. Display new keg form in admin route and style.
 
-4. Lift state to app component, and pass keg data into list and admin component.
+4. Lift state to app component, and pass masterkeglist data into kegList.
 
-5. Conditionally render pintsLeft in admin route only
+5. Pass masterkeglist data into admin and use to render keglist
+
+6. Conditionally render remaining prop in admin route only
+---
+
+7. Install UUID package and import into App
+7. Create handler method in App for adding kegs and pass down to Admin and NewKegForm components.
+
+8. Assign refs to inputs in form and define these variables as null to start.
+
+9. Create handler method in NewKegForm to assign refs to values in passed-down keg adding handler method. call submission handler method onSubmit.
+
+
+10. Use local state in admin to show form when "add new keg" is clicked
 
 
 
@@ -21,6 +34,7 @@
 
 
 
+------------------------------------
  ### Objectives
 
  This week progress on this multiple-week independent project will be checked using the following objectives:

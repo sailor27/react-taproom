@@ -5,6 +5,9 @@ import Admin from './Admin';
 import Error404 from './Error404';
 import { Switch, Route } from 'react-router-dom';
 import squigs from '../assets/images/1520.jpg';
+/*eslint-disable *//*eslint-disable */
+import { v4 } from 'uuid';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -61,7 +64,8 @@ class App extends React.Component {
           }
         }
       };
-    }
+  }
+
   render() {
     var appStyle = {
       margin: '0px',
