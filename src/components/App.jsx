@@ -51,6 +51,9 @@ function App(){
       <Switch>
         <Route exact path='/' component={ KegList } />
         <Route path='/admin' component={ Admin } />
+        <Route path='/admin' render={(props)=>
+          <Admin currentRouterPath={props.location.pathname} />}
+            />
         <Route component={Error404} />
       </Switch>
 
