@@ -62,7 +62,8 @@ class App extends React.Component {
             price: '6',
             remaining: '58'
           }
-        }
+        },
+        selectedKeg: null
       };
     this.handleNewKeg = this.handleNewKeg.bind(this);
   }
@@ -74,6 +75,10 @@ class App extends React.Component {
     });
     this.setState({masterKegList: newMasterKegList});
     console.log(newMasterKegList);
+  }
+
+  handleKegSelection(kegId){
+    this.setState({selectedKeg: kegId});
   }
 
   render(){
@@ -123,7 +128,9 @@ class App extends React.Component {
           <Route exact path='/admin' render={(props)=><Admin
               kegList={this.state.masterKegList}
               currentRouterPath={props.location.pathname}
-              onNewKeg = {this.handleNewKeg}/>} />
+              onNewKeg={this.handleNewKeg}
+              onKegSelection={this.handleKegSelection}
+              selectedKeg={this.state.selectedKeg}/>} />
           <Route component={Error404} />
         </Switch>
       </div>

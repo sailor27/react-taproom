@@ -23,6 +23,9 @@
 
 10. Create handler method in NewKegForm to assign refs to values in passed-down keg adding handler method. Call submission handler method onSubmit. See added keg info in menu and admin list!
 
+11. Add kegId property to kegs set to keg key. Plan steps to implement editing kegs.
+
+12. Edit Keg~!
 
 11. Use local state in admin to show form when "add new keg" is clicked
 12. Fix background CSS to cover entire page, add gradient overlay.

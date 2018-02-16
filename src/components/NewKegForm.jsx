@@ -6,7 +6,7 @@ function NewKegForm(props){
     display: 'flex',
     flexFlow: 'column nowrap',
     width: '500px',
-    height: '300px',
+    height: '380px',
     justifyContent: 'space-between',
     alignItems: 'center'
   };
@@ -34,6 +34,7 @@ function NewKegForm(props){
   return (
     <div >
       <form onSubmit={handleNewKegForm} style={formStyle} >
+        <h1>Add a New Keg</h1>
         <input
           type='text'
           id='name'

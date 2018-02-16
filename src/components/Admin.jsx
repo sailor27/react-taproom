@@ -4,6 +4,8 @@ import KegList from  './KegList';
 import PropTypes from 'prop-types';
 
 function Admin(props) {
+  console.log(props.onKegSelection);
+  console.log(props.selectedKeg);
 
   var adminStyle = {
     display: 'flex',
@@ -12,7 +14,7 @@ function Admin(props) {
   };
   return(
     <div style={adminStyle}>
-      <h1>Add a New Keg</h1>
+
       <NewKegForm onNewKeg={props.onNewKeg}/>
       <KegList
         kegList={props.kegList}
@@ -25,7 +27,9 @@ function Admin(props) {
 Admin.propTypes = {
   kegList: PropTypes.object,
   currentRouterPath: PropTypes.string.isRequired,
-  onNewKeg: PropTypes.func
+  onNewKeg: PropTypes.func,
+  onKegSelection: PropTypes.func.isRequired,
+  selectedKeg: PropTypes.string
 };
 
 
