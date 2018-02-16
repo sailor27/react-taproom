@@ -2,7 +2,7 @@ import React from 'react';
 import NewKegForm from './NewKegForm';
 import KegList from  './KegList';
 import PropTypes from 'prop-types';
-
+import EditKegForm from './EditKegForm';
 function Admin(props) {
   console.log(props.selectedKeg);
 
@@ -11,9 +11,13 @@ function Admin(props) {
     flexFlow: 'column nowrap',
     alignItems: 'center'
   };
+  let optionalContent = null;
+  if (props.selectedKeg != null) {
+    optionalContent = <EditKegForm selectedKeg={props.kegList[props.selectedKeg]}/>;
+  }
   return(
     <div style={adminStyle}>
-
+      {optionalContent}
       <NewKegForm onNewKeg={props.onNewKeg}/>
       <KegList
         kegList={props.kegList}
