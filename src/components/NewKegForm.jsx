@@ -18,7 +18,6 @@ function NewKegForm(props){
   let _remaining = null;
 
   function handleNewKegForm(event) {
-    console.log('form submit handler fire');
     event.preventDefault();
     props.onNewKeg({name: _name.value, brewer: _brewer.value, description: _description.value, abv: _abv.value, price: _price.value, remaining: _remaining.value });
     _name.value = '';

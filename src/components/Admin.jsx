@@ -13,7 +13,7 @@ function Admin(props) {
   };
   let optionalContent = null;
   if (props.selectedKeg != null) {
-    optionalContent = <EditKegForm selectedKeg={props.kegList[props.selectedKeg]}/>;
+    optionalContent = <EditKegForm selectedKeg={props.kegList[props.selectedKeg]} onEditKeg={props.onEditKeg}/>;
   }
   return(
     <div style={adminStyle}>
@@ -35,7 +35,8 @@ Admin.propTypes = {
   currentRouterPath: PropTypes.string.isRequired,
   onNewKeg: PropTypes.func,
   onKegSelection: PropTypes.func.isRequired,
-  selectedKeg: PropTypes.string
+  selectedKeg: PropTypes.string,
+  onEditKeg: PropTypes.func
 };
 
 

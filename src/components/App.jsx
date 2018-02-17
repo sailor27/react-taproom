@@ -67,6 +67,7 @@ class App extends React.Component {
       };
     this.handleNewKeg = this.handleNewKeg.bind(this);
     this.handleKegSelection = this.handleKegSelection.bind(this);
+    this.handleEditKeg = this.handleEditKeg.bind(this);
   }
 
   handleNewKeg(keg){
@@ -76,6 +77,13 @@ class App extends React.Component {
     });
     this.setState({masterKegList: newMasterKegList});
     console.log(newMasterKegList);
+  }
+
+  handleEditKeg(keg){
+    let newMasterKegList = Object.assign({}, this.state.masterKegList, {
+      [this.state.selectedKeg]: keg
+    });
+    this.setState({masterKegList: newMasterKegList});
   }
 
   handleKegSelection(kegId){
@@ -134,7 +142,8 @@ class App extends React.Component {
               currentRouterPath={props.location.pathname}
               onNewKeg={this.handleNewKeg}
               onKegSelection={this.handleKegSelection}
-              selectedKeg={this.state.selectedKeg}/>} />
+              selectedKeg={this.state.selectedKeg}
+              onEditKeg={this.handleEditKeg}/>} />
           <Route component={Error404} />
         </Switch>
       </div>

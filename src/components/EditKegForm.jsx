@@ -17,9 +17,21 @@ function EditKegForm(props){
   let _price = null;
   let _remaining = null;
 
+  function handleEditKegForm(event) {
+    event.preventDefault();
+    console.log('form submit handler fire');
+    props.onEditKeg({name: _name.value, brewer: _brewer.value, description: _description.value, abv: _abv.value, price: _price.value, remaining: _remaining.value });
+    _name.value = '';
+    _brewer.value = '';
+    _description.value = '';
+    _abv.value = '';
+    _price.value = '';
+    _remaining.value = '';
+  }
+
   return(
     <div>
-      <form style={formStyle}>
+      <form onSubmit={handleEditKegForm}style={formStyle}>
         <h1>Edit {props.selectedKeg.name}</h1>
         <input
           type='text'
@@ -104,7 +116,8 @@ function EditKegForm(props){
 }
 
 EditKegForm.propTypes = {
-  selectedKeg:PropTypes.object
+  selectedKeg:PropTypes.object,
+  onEditKeg: PropTypes.func
 };
 
 export default EditKegForm;
