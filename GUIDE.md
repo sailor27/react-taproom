@@ -29,10 +29,16 @@
 
 13. Send onKegSelection func from Admin to KegList, and from Keglist to Keg as props. Call onKegSelection function on "Edit" button click on Keg component. Console log selectedKeg in admin and get correct kegId.
 
-12. Edit Keg~!
+14. Create EditKegForm component. Set optionalContent to null in Admin and set to equal EditKegForm if  selectedKeg \!\= null. Select a keg and see EditKegForm component rendered in Admin view.
 
-11. Use local state in admin to show form when "add new keg" is clicked
-12. Fix background CSS to cover entire page, add gradient overlay.
+15. Style EditKegForm and receive selectedKeg object from kegList, using props as placeholder values.
+
+16. Create handleEditKegForm function in EditKegForm component, collecting form input values, and calling unmade onEditKeg function. Create handleEditKeg function in App to set state to include selectedKeg values and bind to App. Pass handleEditKeg as onEditKeg to Admin, then to EditKegForm. Select keg in admin to bring up Edit Keg Form, enter values, and submit to update state \!
+
+
+Not done:
+17. Use local state in admin to show form when "add new keg" is clicked
+18. Fix background CSS to cover entire page, add gradient overlay.
 
 
 
