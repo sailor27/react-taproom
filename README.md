@@ -62,3 +62,7 @@ This section documents issues and questions  encountered during the development 
 | console error: Unknown props `global`, `jsx` on style tag in app component  	| This error started appearing when I added a style jsx tag with a global flag on App. It does not prevent the page from rendering, or the styles in the tag from appearing globally 	| resolved but unsure with what step 	|
 | Unexpected character ' ? ' when importing images 	| This error happened when I imported an image from the assets folder. 	| I forgot to install url-loader and file-loader packages, and add rules to the webpack config for loading image files. Resolved after I did these steps. 	|
 | Unable to use color variables inline or in css objects 	| It would be better if I could use the style jsx color variables throughout the app in all the styling methods, but currently can only in style jsx tags	|  Haven't found a way to do this.	|
+
+## Acknowledgements
+
+Background vector created by [SilviaNatalia - Freepik](https://www.freepik.com/free-photos-vectors/background)
