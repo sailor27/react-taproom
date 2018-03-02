@@ -1,4 +1,54 @@
 ## Project Guide
+
+2-16-18
+
+1. Restructure component tree to include admin component area. Admin area will include copy of ticket list, and route to add keg child component.
+
+2. Create Admin component and route to admin component from app in header
+
+3. Display new keg form in admin route and style.
+
+4. Lift state to app component, and pass masterkeglist data into kegList.
+
+5. Pass masterkeglist data into admin and use to render keglist
+
+6. Conditionally render remaining prop in admin route only
+
+
+7. Install UUID package and import into App
+---
+8. Create handler method in App for adding kegs and pass down to Admin and NewKegForm components.
+
+9. Assign refs to inputs in form and define these variables as null to start.
+
+10. Create handler method in NewKegForm to assign refs to values in passed-down keg adding handler method. Call submission handler method onSubmit. See added keg info in menu and admin list!
+
+11. Add kegId property to kegs set to keg key. Plan steps to implement editing kegs.
+
+12. Create handleKegSelection func and send to Admin. Create selectedKeg prop in state, set to null, and send to Admin.
+
+13. Send onKegSelection func from Admin to KegList, and from Keglist to Keg as props. Call onKegSelection function on "Edit" button click on Keg component. Console log selectedKeg in admin and get correct kegId.
+
+14. Create EditKegForm component. Set optionalContent to null in Admin and set to equal EditKegForm if  selectedKeg \!\= null. Select a keg and see EditKegForm component rendered in Admin view.
+
+15. Style EditKegForm and receive selectedKeg object from kegList, using props as placeholder values.
+
+16. Create handleEditKegForm function in EditKegForm component, collecting form input values, and calling unmade onEditKeg function. Create handleEditKeg function in App to set state to include selectedKeg values and bind to App. Pass handleEditKeg as onEditKeg to Admin, then to EditKegForm. Select keg in admin to bring up Edit Keg Form, enter values, and submit to update state \!
+
+
+Not done:
+17. Use local state in admin to show form when "add new keg" is clicked
+18. Fix background CSS to cover entire page, add gradient overlay.
+
+
+
+
+
+
+
+
+
+------------------------------------
  ### Objectives
 
  This week progress on this multiple-week independent project will be checked using the following objectives:

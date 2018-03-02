@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function NewKegForm(props){
+function EditKegForm(props){
   const formStyle = {
     display: 'flex',
     flexFlow: 'column nowrap',
@@ -17,9 +17,10 @@ function NewKegForm(props){
   let _price = null;
   let _remaining = null;
 
-  function handleNewKegForm(event) {
+  function handleEditKegForm(event) {
     event.preventDefault();
-    props.onNewKeg({name: _name.value, brewer: _brewer.value, description: _description.value, abv: _abv.value, price: _price.value, remaining: _remaining.value });
+    console.log('form submit handler fire');
+    props.onEditKeg({name: _name.value, brewer: _brewer.value, description: _description.value, abv: _abv.value, price: _price.value, remaining: _remaining.value });
     _name.value = '';
     _brewer.value = '';
     _description.value = '';
@@ -28,44 +29,43 @@ function NewKegForm(props){
     _remaining.value = '';
   }
 
-  return (
-    <div >
-      <form onSubmit={handleNewKegForm} style={formStyle} >
-        <h1>New Keg</h1>
+  return(
+    <div>
+      <form onSubmit={handleEditKegForm}style={formStyle}>
+        <h1>Edit {props.selectedKeg.name}</h1>
         <input
           type='text'
           id='name'
-          placeholder='Keg Name'
+          placeholder= {props.selectedKeg.name}
           ref={(input) => {_name = input;}}/>
         <input
           type='text'
           id='brewer'
-          placeholder='Brewery'
+          placeholder={props.selectedKeg.brewer}
           ref={(input) => {_brewer = input;}}/>
         <textarea
           id='Description'
-          placeholder='ex: Sparkling Wine with Grapefruit'
+          placeholder={props.selectedKeg.description}
           ref={(input) => {_description = input;}}/>
         <div className="smaller">
           <input
             type='text'
             id='abv'
-            placeholder='ABV'
+            placeholder={props.selectedKeg.abv}
             ref={(input) => {_abv = input;}}/>
           <input
             type='text'
             id='price'
-            placeholder='$'
+            placeholder={props.selectedKeg.price}
             ref={(input) => {_price = input;}}/>
           <input
             type='text'
             id='remaining'
-            placeholder='#'
+            placeholder={props.selectedKeg.remaining}
             ref={(input) => {_remaining = input;}}/>
         </div>
-        <button type='submit'>Add</button>
+        <button type='submit'>Change</button>
       </form>
-
       <style jsx>{`
           form{
             border: 3px solid var(--blueblack);
@@ -73,7 +73,7 @@ function NewKegForm(props){
             flexFlow: column nowrap;
             justifyContent: space-between;
             alignItems: center;
-            background-color: var(--periwink);
+            background-color: var(--peach);
             border-radius: 15px;
             padding: 10px;
           }
@@ -115,8 +115,9 @@ function NewKegForm(props){
   );
 }
 
-NewKegForm.propTypes = {
-  onNewKeg: PropTypes.func
+EditKegForm.propTypes = {
+  selectedKeg:PropTypes.object,
+  onEditKeg: PropTypes.func
 };
 
-export default NewKegForm;
+export default EditKegForm;

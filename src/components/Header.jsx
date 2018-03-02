@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 function Header() {
+
   return(
     <div className="header">
       <h1><Link style={{fontFamily:'Josefin Slab', fontSize: '4.75em', color:'rgb(19, 36, 115)' }}to="/">TAP ROOM</Link></h1>
@@ -12,7 +13,8 @@ function Header() {
           <li><Link to="/">Menu</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/news">News</Link></li>
-          <li><Link to="/newkeg">Add Keg</Link></li>
+          <li><Link to="/admin">Admin</Link></li>
+
         </ul>
       </div>
       <style jsx>{`
@@ -40,5 +42,6 @@ function Header() {
     </div>
   );
 }
+
 
 export default Header;
