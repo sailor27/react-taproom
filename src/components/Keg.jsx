@@ -59,6 +59,7 @@ function Keg(props){
           }
 
           button{
+				    background-color: var(--light-peach);
             width: 100px;
             height: 60px;
             border: 3px solid black;

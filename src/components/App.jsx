@@ -94,9 +94,8 @@ class App extends React.Component {
     var appStyle = {
       margin: '0px',
       background: `linear-gradient(
-        rgba(255, 0, 0, 0.10),rgba(255, 0, 0, 0.10)), url(${squigs})`,
+      rgba(255, 0, 0, 0.10),rgba(255, 0, 0, 0.10)), url(${squigs})`,
       backgroundSize: 'cover',
-      height: '100vh',
       fontFamily: 'Open Sans',
       fontSize: '18px',
       textAlign: 'center',
@@ -106,7 +105,6 @@ class App extends React.Component {
       <div style={appStyle}>
         <style global jsx>{`
             :root {
-              --bg-white: #0fd808;
               --light-peach: #ffe3ce;
               --peach: #ffbdb4;
               --periwink: #b0cbff;
@@ -116,6 +114,10 @@ class App extends React.Component {
               --blueblack: rgb(19, 36, 115);
             }
             @import url('https://fonts.googleapis.com/css?family=Josefin+Slab:400,700i|Open+Sans+Condensed:300,700|Open+Sans:400,700');
+
+						body {
+							margin: 0px;
+						}
 
             a {
               text-decoration: none;
