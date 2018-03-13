@@ -116,6 +116,7 @@ function Keg(props){
             border: 3px solid black;
             border-radius: 25px;
             font-size: 1em;
+						background-color: var(--light-peach);
           }
           `}
       </style>
